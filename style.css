@@ -140,6 +140,71 @@ header {
     display: block;
   }
 
+  .services {
+    flex-direction: column;
+    align-items: center;       /* Centraliza os filhos no eixo horizontal */
+    justify-content: center;   /* Garante alinhamento vertical se necessário */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .service-card {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .bloco-servicos-galeria {
+    padding: 40px 10px; /* Reduz o padding lateral em telas menores */
+  }
+
+    /* Remove animações visuais no mobile */
+.service-card:hover,
+.galeria-imagens img:hover,
+.menu ul li a:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* Reduz tamanhos e ajustes para iPhone */
+.hero h1 {
+  font-size: 1.8rem;
+}
+.card-orcamento h2 {
+  font-size: 1.2rem;
+}
+.orcamento-box {
+  flex-direction: column;
+  gap: 10px;
+}
+.galeria-imagens img {
+  width: 90%;
+  height: auto;
+}
+footer {
+  height: auto;
+  padding: 20px;
+}
+.rodapé {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+}
+
+.separador .linha {
+            width: 150px;
+        }
+        .separador {
+            margin: 0px 0;
+            padding: 10px 0;
+        }
+        .separador .floco-emoji {
+            font-size: 24px;
+            margin: 0 15px;
+            
+        }
   
   
 }
@@ -236,21 +301,6 @@ header {
         text-shadow: 0 0 5px rgba(52, 152, 219, 0);
     }
 
-    /* Responsividade */
-    @media (max-width: 768px) {
-        .separador .linha {
-            width: 150px;
-        }
-        .separador {
-            margin: 0px 0;
-            padding: 10px 0;
-        }
-        .separador .floco-emoji {
-            font-size: 24px;
-            margin: 0 15px;
-            
-        }
-    }
 
   /* Serviços */
 
@@ -355,60 +405,4 @@ header {
 
   .rodapép > p {
     font-size: 1.2rem;
-  }
-
-  /* Responsividade simples */
-  @media (max-width: 768px) {
-    .services {
-    flex-direction: column;
-    align-items: center;       /* Centraliza os filhos no eixo horizontal */
-    justify-content: center;   /* Garante alinhamento vertical se necessário */
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .service-card {
-    width: 90%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-
-  .bloco-servicos-galeria {
-    padding: 40px 10px; /* Reduz o padding lateral em telas menores */
-  }
-
-    /* Remove animações visuais no mobile */
-.service-card:hover,
-.galeria-imagens img:hover,
-.menu ul li a:hover {
-  transform: none !important;
-  box-shadow: none !important;
-  background: none !important;
-}
-
-/* Reduz tamanhos e ajustes para iPhone */
-.hero h1 {
-  font-size: 1.8rem;
-}
-.card-orcamento h2 {
-  font-size: 1.2rem;
-}
-.orcamento-box {
-  flex-direction: column;
-  gap: 10px;
-}
-.galeria-imagens img {
-  width: 90%;
-  height: auto;
-}
-footer {
-  height: auto;
-  padding: 20px;
-}
-.rodapé {
-  margin: 0;
-  width: 90%;
-  text-align: center;
-}
   }
