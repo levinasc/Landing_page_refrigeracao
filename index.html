@@ -133,12 +133,24 @@
 </body>
 
 <script>
+  // Só aplica o parallax se a tela for maior que 768px
+  if (window.innerWidth > 768) {
+    window.addEventListener('scroll', function () {
+      const bg = document.querySelector('.hero-testimonials-bg');
+      let offset = window.scrollY;
+      bg.style.backgroundPositionY = offset * 0.5 + 'px';
+    });
+  }
+</script>
+
+<script>
   window.addEventListener('scroll', function () {
     const bg = document.querySelector('.hero-testimonials-bg');
     let offset = window.scrollY;
     bg.style.backgroundPositionY = offset * 0.5 + 'px';
   });
 </script>
+
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
@@ -147,6 +159,7 @@
     menu.classList.toggle('active');
   });
 </script>
+
 
 
 </html>

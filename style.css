@@ -360,4 +360,38 @@ header {
       flex-direction: column;
       max-width: 90%;
     }
+
+    /* Remove animações visuais no mobile */
+.service-card:hover,
+.galeria-imagens img:hover,
+.menu ul li a:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* Reduz tamanhos e ajustes para iPhone */
+.hero h1 {
+  font-size: 1.8rem;
+}
+.card-orcamento h2 {
+  font-size: 1.2rem;
+}
+.orcamento-box {
+  flex-direction: column;
+  gap: 10px;
+}
+.galeria-imagens img {
+  width: 90%;
+  height: auto;
+}
+footer {
+  height: auto;
+  padding: 20px;
+}
+.rodapé {
+  margin: 0;
+  width: 90%;
+  text-align: center;
+}
   }
