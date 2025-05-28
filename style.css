@@ -1,6 +1,7 @@
 /* Reset */
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0px; padding: 0px;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -106,6 +107,12 @@ header {
 
 /* Responsividade para telas até 768px */
 @media (max-width: 768px) {
+  
+  * {
+  margin: 0px; padding: 0px;
+  
+}
+
   /* Esconde menu principal */
   .menu {
     display: none;
@@ -289,7 +296,8 @@ footer {
     }
     
     .separador .linha {
-        width: 800px;
+        width: 100%;
+        max-width: 600px;
         height: 1px;
         background: linear-gradient(90deg, transparent, #3498db, transparent);
     }
@@ -306,7 +314,7 @@ footer {
 
   .bloco-servicos-galeria {
   background-color: #c5d8e083;
-  padding: 70px;
+  padding: 70px 20px;
   
 }
 
@@ -394,15 +402,18 @@ footer {
   }
 
   .rodapé {
-    margin-left: 90px;
-    margin-top: 30px;
-    text-align: left;
-    
-    display: grid;
-    grid-template-columns: auto / auto;
-    width: 400px;
-  }
+  margin: 30px auto 0 auto;
+  text-align: left;
+  display: grid;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 20px; /* Garante espaço interno sem ultrapassar bordas */
+}
 
   .rodapép > p {
     font-size: 1.2rem;
   }
+
+  html, body {
+  overflow-x: hidden;
+}
