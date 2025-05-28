@@ -394,8 +394,6 @@ footer {
     height: 350px;
     text-align: center;
 
-  
-    
     background-color: #c5d8e083;
     color: #004d40;
     font-size: 0.95rem;
@@ -403,7 +401,7 @@ footer {
 
   .rodapé {
   margin: 30px auto 0 auto;
-  text-align: left;
+  text-align: center;
   display: grid;
   width: 100%;
   max-width: 400px;
